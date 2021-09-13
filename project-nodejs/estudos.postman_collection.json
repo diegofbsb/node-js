@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "f055bb4e-6546-47f4-9932-2753773b7fd3",
+		"name": "estudos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "deleta",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/atendimentos/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos",
+						"8"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salva",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cliente",
+							"value": "lucas",
+							"type": "text"
+						},
+						{
+							"key": "pet",
+							"value": "cristal",
+							"type": "text"
+						},
+						{
+							"key": "servico",
+							"value": "tosa",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "agendado",
+							"type": "text"
+						},
+						{
+							"key": "observacoes",
+							"value": "bonzinho",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"value": "22/10/2021",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/atendimentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atualiza",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cliente",
+							"value": "didico",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/atendimentos/7?nome=babi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos",
+						"7"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "babi"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lista todos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/atendimentos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lista por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/atendimentos/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
